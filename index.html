@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amer247 Document Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Amer247 Document Guide</h1>
+            <p>Select a service to view the required documents before proceeding to the counter.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="service-selection">
+                <label for="services">Choose a Service:</label>
+                <div class="select-container">
+                    <select id="services" onchange="showDocuments()">
+                        <!-- Options will be populated dynamically -->
+                    </select>
+                    <span class="custom-arrow"></span>
+                </div>
+                <div class="button-group">
+                    <button onclick="openServiceForm('add')" class="btn">Add Service</button>
+                    <button onclick="openServiceForm('edit')" class="btn">Edit Service</button>
+                    <button onclick="deleteService()" class="btn">Delete Service</button>
+                </div>
+            </section>
+
+            <section id="document-display" style="display: none;">
+                <h2 id="service-title"></h2>
+                <div id="document-list">
+                    <!-- Document requirements will be displayed here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Service Form Modal -->
+    <div id="service-form-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeServiceForm()">&times;</span>
+            <h2 id="form-title">Add/Edit Service</h2>
+            <form id="service-form" onsubmit="saveService(event)">
+                <label for="service-name">Service Name:</label>
+                <input type="text" id="service-name" required>
+
+                <label for="service-documents">Required Documents:</label>
+                <div id="documents-container">
+                    <!-- Document inputs will be added here -->
+                </div>
+                <button type="button" class="btn" onclick="addDocumentField()">Add Document</button>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn">Save Service</button>
+                    <button type="button" class="btn" onclick="closeServiceForm()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Amer247 UAE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for dynamic content -->
+    <script src="script.js"></script>
+</body>
+</html>
