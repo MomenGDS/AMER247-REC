@@ -13,24 +13,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
+    <!-- Language Selection Modal -->
+    <div id="language-modal" class="modal" style="display: block;">
+        <div class="modal-content">
+            <h2>Select Language / اللغة / زبان منتخب کریں</h2>
+            <div class="language-buttons">
+                <button onclick="setLanguage('en')" class="btn">English</button>
+                <button onclick="setLanguage('ar')" class="btn">العربية</button>
+                <button onclick="setLanguage('ur')" class="btn">اردو</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Button -->
+    <button id="admin-button" class="admin-button" onclick="enterAdminMode()">
+        <i class="fas fa-user-shield"></i>
+    </button>
+
+    <!-- Admin Password Modal -->
+    <div id="admin-password-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeAdminPasswordModal()">&times;</span>
+            <h2>Admin Login</h2>
+            <form id="admin-password-form" onsubmit="verifyAdminPassword(event)">
+                <label for="admin-password">Password:</label>
+                <input type="password" id="admin-password" required>
+                <div class="form-buttons">
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn" onclick="closeAdminPasswordModal()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <header>
         <div class="container">
-            <h1>Amer247 Document Guide</h1>
-            <p>Select a service to view the required documents before proceeding to the counter.</p>
+            <h1 id="header-title">Amer247 Document Guide</h1>
+            <p id="header-subtitle">Select a service to view the required documents before proceeding to the counter.</p>
         </div>
     </header>
 
     <main>
         <div class="container">
             <section id="service-selection">
-                <label for="services">Choose a Service:</label>
+                <label for="services" id="choose-service-label">Choose a Service:</label>
                 <div class="select-container">
                     <select id="services" onchange="showDocuments()">
                         <!-- Options will be populated dynamically -->
                     </select>
                     <span class="custom-arrow"></span>
                 </div>
-                <div class="button-group">
+                <div class="button-group" id="admin-actions" style="display: none;">
                     <button onclick="openServiceForm('add')" class="btn">Add Service</button>
                     <button onclick="openServiceForm('edit')" class="btn">Edit Service</button>
                     <button onclick="deleteService()" class="btn">Delete Service</button>
@@ -41,6 +74,9 @@
                 <h2 id="service-title"></h2>
                 <div id="document-list">
                     <!-- Document requirements will be displayed here -->
+                </div>
+                <div id="notes-section">
+                    <!-- Notes will be displayed here -->
                 </div>
             </section>
         </div>
@@ -60,6 +96,12 @@
                     <!-- Document inputs will be added here -->
                 </div>
                 <button type="button" class="btn" onclick="addDocumentField()">Add Document</button>
+
+                <label for="service-notes">Notes:</label>
+                <div id="notes-container">
+                    <!-- Notes inputs will be added here -->
+                </div>
+                <button type="button" class="btn" onclick="addNoteField()">Add Note</button>
 
                 <div class="form-buttons">
                     <button type="submit" class="btn">Save Service</button>

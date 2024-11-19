@@ -169,6 +169,45 @@ main {
     font-size: 1.25rem;
 }
 
+#notes-section {
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+#notes-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#notes-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #dc3545;
+    animation: fadeIn 0.5s ease-out;
+}
+
+#notes-section ul {
+    list-style: disc inside;
+}
+
+#notes-section li {
+    padding: 5px 0;
+    font-size: 1rem;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideIn 0.5s forwards;
+}
+
+#notes-section li:nth-child(odd) {
+    animation-delay: 0.1s;
+}
+
+#notes-section li:nth-child(even) {
+    animation-delay: 0.2s;
+}
+
 footer {
     background-color: #f1f3f5;
     padding: 20px 0;
@@ -225,7 +264,8 @@ footer p {
     font-weight: 600;
 }
 
-#service-form input[type="text"] {
+#service-form input[type="text"],
+#service-form input[type="password"] {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -234,21 +274,25 @@ footer p {
     transition: border-color 0.3s;
 }
 
-#service-form input[type="text"]:focus {
+#service-form input[type="text"]:focus,
+#service-form input[type="password"]:focus {
     border-color: #007bff;
     outline: none;
 }
 
-#documents-container {
+#documents-container,
+#notes-container {
     margin-top: 10px;
 }
 
-#documents-container .document-input {
+#documents-container .document-input,
+#notes-container .note-input {
     display: flex;
     margin-bottom: 10px;
 }
 
-#documents-container .document-input input {
+#documents-container .document-input input,
+#notes-container .note-input input {
     flex: 1;
     padding: 10px;
     font-size: 1rem;
@@ -257,12 +301,14 @@ footer p {
     transition: border-color 0.3s;
 }
 
-#documents-container .document-input input:focus {
+#documents-container .document-input input:focus,
+#notes-container .note-input input:focus {
     border-color: #007bff;
     outline: none;
 }
 
-#documents-container .document-input .remove-button {
+.document-input .remove-button,
+.note-input .remove-button {
     background-color: transparent;
     border: none;
     font-size: 1.25rem;
@@ -271,7 +317,8 @@ footer p {
     cursor: pointer;
 }
 
-#documents-container .document-input .remove-button:hover {
+.document-input .remove-button:hover,
+.note-input .remove-button:hover {
     color: #a71d2a;
 }
 
@@ -283,6 +330,34 @@ footer p {
     margin-right: 10px;
 }
 
+.admin-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.admin-button:hover {
+    color: #0056b3;
+}
+
+.language-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.language-buttons .btn {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Responsive Styles */
 @media (max-width: 600px) {
     header h1 {
         font-size: 2rem;
