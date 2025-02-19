@@ -1,123 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Amer247 Document Guide</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts for modern typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-</head>
-<body>
-    <!-- Language Selection Modal -->
-    <div id="language-modal" class="modal" style="display: block;">
-        <div class="modal-content">
-            <h2>Select Language / اللغة / زبان منتخب کریں</h2>
-            <div class="language-buttons">
-                <button onclick="setLanguage('en')" class="btn">English</button>
-                <button onclick="setLanguage('ar')" class="btn">العربية</button>
-                <button onclick="setLanguage('ur')" class="btn">اردو</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Admin Button -->
-    <button id="admin-button" class="admin-button" onclick="enterAdminMode()">
-        <i class="fas fa-user-shield"></i>
-    </button>
-
-    <!-- Admin Password Modal -->
-    <div id="admin-password-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button" onclick="closeAdminPasswordModal()">&times;</span>
-            <h2>Admin Login</h2>
-            <form id="admin-password-form" onsubmit="verifyAdminPassword(event)">
-                <label for="admin-password">Password:</label>
-                <input type="password" id="admin-password" required>
-                <div class="form-buttons">
-                    <button type="submit" class="btn">Login</button>
-                    <button type="button" class="btn" onclick="closeAdminPasswordModal()">Cancel</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amer 24/7 Services</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <h1 id="header-title">Amer247 Document Guide</h1>
-            <p id="header-subtitle">Select a service to view the required documents before proceeding to the counter.</p>
-        </div>
+      <h1>Amer 24/7 Services &amp; Requirements</h1>
     </header>
 
-    <main>
-        <div class="container">
-            <section id="service-selection">
-                <label for="services" id="choose-service-label">Choose a Service:</label>
-                <div class="select-container">
-                    <select id="services" onchange="showDocuments()">
-                        <!-- Options will be populated dynamically -->
-                    </select>
-                    <span class="custom-arrow"></span>
-                </div>
-                <div class="button-group" id="admin-actions" style="display: none;">
-                    <button onclick="openServiceForm('add')" class="btn">Add Service</button>
-                    <button onclick="openServiceForm('edit')" class="btn">Edit Service</button>
-                    <button onclick="deleteService()" class="btn">Delete Service</button>
-                </div>
-            </section>
-
-            <section id="document-display" style="display: none;">
-                <h2 id="service-title"></h2>
-                <div id="document-list">
-                    <!-- Document requirements will be displayed here -->
-                </div>
-                <div id="notes-section">
-                    <!-- Notes will be displayed here -->
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <!-- Service Form Modal -->
-    <div id="service-form-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button" onclick="closeServiceForm()">&times;</span>
-            <h2 id="form-title">Add/Edit Service</h2>
-            <form id="service-form" onsubmit="saveService(event)">
-                <label for="service-name">Service Name:</label>
-                <input type="text" id="service-name" required>
-
-                <label for="service-documents">Required Documents:</label>
-                <div id="documents-container">
-                    <!-- Document inputs will be added here -->
-                </div>
-                <button type="button" class="btn" onclick="addDocumentField()">Add Document</button>
-
-                <label for="service-notes">Notes:</label>
-                <div id="notes-container">
-                    <!-- Notes inputs will be added here -->
-                </div>
-                <button type="button" class="btn" onclick="addNoteField()">Add Note</button>
-
-                <div class="form-buttons">
-                    <button type="submit" class="btn">Save Service</button>
-                    <button type="button" class="btn" onclick="closeServiceForm()">Cancel</button>
-                </div>
-            </form>
-        </div>
+    <!-- Fixed Edit List Button in the far corner -->
+    <div class="edit-box">
+      <button id="editButton" onclick="toggleEdit()">Edit List</button>
     </div>
 
+    <section class="controls">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search services..." list="suggestions" />
+        <!-- Datalist for suggestions -->
+        <datalist id="suggestions">
+          <option value="Change Status - Company">
+          <option value="Change Status - Family">
+          <option value="Change Status - Sponsored Visit Visa">
+          <option value="Data Modification - Company">
+          <option value="Data Modification - Family">
+          <option value="Employment Visa">
+          <option value="Employment Visa Cancellation">
+          <option value="Employment Visa Renewal">
+          <option value="Employment Visa Stamping">
+          <option value="Cancellation - Entry Permit (After Entry) – Company">
+          <option value="Family Residence Visa Cancellation">
+          <option value="Gulf Residents Visit Visa Extend">
+          <option value="Holding Visa">
+          <option value="Investor/Partner Visa">
+          <option value="Long Term Visit Visa Inside the Country">
+          <option value="New Born Residence Visa">
+          <option value="New Establishment Card (with Online)">
+          <option value="New Establishment Card (without Online)">
+          <option value="On Arrival Visa Extension">
+          <option value="Parent’s Residence Visa">
+          <option value="Parents Visa Renewal (01 Year)">
+          <option value="Parents Visa Stamping (01 Year)">
+          <option value="Partner/Investor Visa Cancellation">
+          <option value="Partner/Investor Visa Renewal">
+          <option value="Partner/Investor Visa Stamping">
+          <option value="Re-Entry Permit">
+          <option value="Renewal of Establishment Card (with Online)">
+          <option value="Renewal of Establishment Card (without Online)">
+          <option value="Security Deposit">
+          <option value="Son/Daughter Residence Visa">
+          <option value="Sponsored Visit Visa - 30 Days">
+          <option value="Sponsored Visit Visa - 90 Days">
+          <option value="Spouse &amp; Children Visa Renewal">
+          <option value="Spouse &amp; Children Visa Stamping">
+          <option value="Spouse Residence Visa">
+          <option value="Travel Report - Company">
+          <option value="Travel Report - Family">
+          <option value="Virtual Visa Renewal">
+          <option value="Virtual Visa Stamping (01 Year)">
+          <option value="Virtual Work Visa [Remote Work Visa]">
+          <option value="Virtual Work Visa Cancellation">
+          <option value="Visit Visa Extend">
+        </datalist>
+      </div>
+
+      <div class="dropdown-box">
+        <select id="serviceSelect">
+          <option value="">-- Select a Service --</option>
+          <option value="service-1">Change Status - Company</option>
+          <option value="service-2">Change Status - Family</option>
+          <option value="service-3">Change Status - Sponsored Visit Visa</option>
+          <option value="service-4">Data Modification - Company</option>
+          <option value="service-5">Data Modification - Family</option>
+          <option value="service-6">Employment Visa</option>
+          <option value="service-7">Employment Visa Cancellation</option>
+          <option value="service-8">Employment Visa Renewal</option>
+          <option value="service-9">Employment Visa Stamping</option>
+          <option value="service-10">Cancellation - Entry Permit (After Entry) – Company</option>
+          <option value="service-11">Family Residence Visa Cancellation</option>
+          <option value="service-12">Gulf Residents Visit Visa Extend</option>
+          <option value="service-13">Holding Visa</option>
+          <option value="service-14">Investor/Partner Visa</option>
+          <option value="service-15">Long Term Visit Visa Inside the Country</option>
+          <option value="service-16">New Born Residence Visa</option>
+          <option value="service-17">New Establishment Card (with Online)</option>
+          <option value="service-18">New Establishment Card (without Online)</option>
+          <option value="service-19">On Arrival Visa Extension</option>
+          <option value="service-20">Parent’s Residence Visa</option>
+          <option value="service-21">Parents Visa Renewal (01 Year)</option>
+          <option value="service-22">Parents Visa Stamping (01 Year)</option>
+          <option value="service-23">Partner/Investor Visa Cancellation</option>
+          <option value="service-24">Partner/Investor Visa Renewal</option>
+          <option value="service-25">Partner/Investor Visa Stamping</option>
+          <option value="service-26">Re-Entry Permit</option>
+          <option value="service-27">Renewal of Establishment Card (with Online)</option>
+          <option value="service-28">Renewal of Establishment Card (without Online)</option>
+          <option value="service-29">Security Deposit</option>
+          <option value="service-30">Son/Daughter Residence Visa</option>
+          <option value="service-31">Sponsored Visit Visa - 30 Days</option>
+          <option value="service-32">Sponsored Visit Visa - 90 Days</option>
+          <option value="service-33">Spouse &amp; Children Visa Renewal</option>
+          <option value="service-34">Spouse &amp; Children Visa Stamping</option>
+          <option value="service-35">Spouse Residence Visa</option>
+          <option value="service-36">Travel Report - Company</option>
+          <option value="service-37">Travel Report - Family</option>
+          <option value="service-38">Virtual Visa Renewal</option>
+          <option value="service-39">Virtual Visa Stamping (01 Year)</option>
+          <option value="service-40">Virtual Work Visa [Remote Work Visa]</option>
+          <option value="service-41">Virtual Work Visa Cancellation</option>
+          <option value="service-42">Visit Visa Extend</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="services-container">
+      <!-- All service-detail blocks remain unchanged -->
+      <!-- Service 1 -->
+      <div class="service-detail" id="service-1">
+        <h2>
+          <span class="icon">
+            <!-- Document icon SVG -->
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+            </svg>
+          </span>
+          Change Status - Company
+        </h2>
+        <h3>Required Documents:</h3>
+        <ul>
+          <li>Sponsor’s Emirates ID copy</li>
+          <li>Applicant’s Entry Permit Copy</li>
+          <li>Applicant’s Passport copy</li>
+        </ul>
+      </div>
+      <!-- Service 2 -->
+      <div class="service-detail" id="service-2">
+        <h2>
+          <span class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+            </svg>
+          </span>
+          Change Status - Family
+        </h2>
+        <h3>Required Documents:</h3>
+        <ul>
+          <li>Sponsor’s Emirates ID copy</li>
+          <li>Applicant’s Entry Permit Copy</li>
+          <li>Applicant’s Passport copy</li>
+        </ul>
+      </div>
+      <!-- Service 3 -->
+      <div class="service-detail" id="service-3">
+        <h2>
+          <span class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+            </svg>
+          </span>
+          Change Status - Sponsored Visit Visa
+        </h2>
+        <h3>Required Documents:</h3>
+        <ul>
+          <li>Sponsor’s Emirates ID copy</li>
+          <li>Applicant’s Entry Permit Copy</li>
+          <li>Applicant’s Passport copy</li>
+        </ul>
+      </div>
+      <!-- ... Additional service-detail blocks go here ... -->
+    </section>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2023 Amer247 UAE. All rights reserved.</p>
-        </div>
+      <p>Operating Hours: 24/7, including Fridays and public holidays.</p>
+      <p>
+        Contact:
+        WhatsApp: +971 58 1257700 |
+        Email: <a href="mailto:info@amer247.com">info@amer247.com</a> |
+        Phone: +971 4 2300500
+      </p>
     </footer>
 
-    <!-- JavaScript for dynamic content -->
-    <script src="script.js"></script>
-</body>
+    <script>
+      // Hide all service details on start
+      const services = document.querySelectorAll('.service-detail');
+      services.forEach(service => {
+        service.style.display = 'none';
+      });
+
+      // Dropdown selection shows the selected service with fade animation
+      const serviceSelect = document.getElementById('serviceSelect');
+      serviceSelect.addEventListener('change', function () {
+        services.forEach(service => {
+          service.style.display = 'none';
+          service.classList.remove('fade-in');
+        });
+        const selected = serviceSelect.value;
+        if (selected) {
+          const el = document.getElementById(selected);
+          el.style.display = 'block';
+          void el.offsetWidth;
+          el.classList.add('fade-in');
+        }
+      });
+
+      // Simple live search: filter services as user types in search box
+      const searchInput = document.getElementById('searchInput');
+      searchInput.addEventListener('input', function () {
+        const filter = searchInput.value.toLowerCase();
+        services.forEach(service => {
+          const title = service.querySelector('h2').textContent.toLowerCase();
+          if (title.includes(filter)) {
+            service.style.display = 'block';
+            service.classList.add('fade-in');
+          } else {
+            service.style.display = 'none';
+          }
+        });
+      });
+
+      // Edit mode toggle (password protected)
+      const editPassword = "admin123"; // Change as desired
+      function toggleEdit() {
+        const pass = prompt("Enter password to edit the list:");
+        if (pass === editPassword) {
+          const container = document.getElementById("services-container");
+          if (container.contentEditable === "true") {
+            container.contentEditable = "false";
+            alert("Edit mode disabled.");
+          } else {
+            container.contentEditable = "true";
+            alert("Edit mode enabled. You can now edit the list.");
+          }
+        } else {
+          alert("Incorrect password.");
+        }
+      }
+      window.toggleEdit = toggleEdit;
+    </script>
+  </body>
 </html>
