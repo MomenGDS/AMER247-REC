@@ -1,983 +1,1003 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-        <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FSP7VDJ42K"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-FSP7VDJ42K');
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Amer 24/7 Services</title>
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Amer 24/7 Services &amp; Requirements</h1>
-    </header>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FSP7VDJ42K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <section class="controls">
-      <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Search services..." list="suggestions" />
-        <!-- Updated datalist for suggestions -->
-        <datalist id="suggestions">
-          <option value="Change Status">
-          <option value="Medical Test and Emirates ID">
-          <option value="Change Status - Sponsored Visit Visa">
-          <option value="Data Modification - Passport Updation">
-          <option value="Data Modification - Labour Updation">
-          <option value="Employment Visa">
-          <option value="Employment Visa Cancellation">
-          <option value="Employment Visa Renewal">
-          <option value="Employment Visa Stamping">
-          <option value="Cancellation - Entry Permit (After Entry) – Company">
-          <option value="Family Residence Visa Cancellation">
-          <option value="Gulf Residents Visit Visa Extend">
-          <option value="Holding Visa">
-          <option value="Investor/Partner Visa">
-          <option value="Long Term Visit Visa Inside the Country">
-          <option value="New Born Residence Visa">
-          <option value="New Establishment Card">
-          <option value="New Establishment Card (with Online)">
-          <option value="On Arrival Visa Extension">
-          <option value="Parent’s Residence Visa">
-          <option value="Partner/Investor Visa Cancellation">
-          <option value="Partner/Investor Visa Renewal">
-          <option value="Partner/Investor Visa Stamping">
-          <option value="Re-Entry Permit">
-          <option value="Renewal of Establishment Card (with Online)">
-          <option value="Security Deposit">
-          <option value="Son/Daughter Residence Visa">
-          <option value="Sponsored Visit Visa - 30 Days">
-          <option value="Sponsored Visit Visa - 90 Days">
-          <option value="Spouse & Children Visa Renewal">
-          <option value="Spouse & Children Visa Stamping">
-          <option value="Spouse Residence Visa">
-          <option value="Travel Report - Company">
-          <option value="Travel Report - Family">
-          <option value="Virtual Visa Renewal">
-          <option value="Virtual Visa Stamping (01 Year)">
-          <option value="Virtual Work Visa [Remote Work Visa]">
-          <option value="Virtual Work Visa Cancellation">
-          <option value="Visit Visa Extension">
-          <option value="Golden Visa for Directors/Managers and Highlly Skilled Professionals">
-        </datalist>
-      </div>
+    gtag('config', 'G-FSP7VDJ42K');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amer 24/7 Services</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      <!-- Updated dropdown menu -->
-      <div class="dropdown-box">
-        <select id="serviceSelect">
-          <option value="">-- Select a Service --</option>
-          <option value="service-1">Change Status</option>
-          <option value="service-2">Medical Test and Emirates ID</option>
-          <option value="service-3">Change Status - Sponsored Visit Visa</option>
-          <option value="service-4">Data Modification - Passport Updation</option>
-          <option value="service-5">Data Modification - Labour Updation</option>
-          <option value="service-6">Employment Visa</option>
-          <option value="service-7">Employment Visa Cancellation</option>
-          <option value="service-8">Employment Visa Renewal</option>
-          <option value="service-9">Employment Visa Stamping</option>
-          <option value="service-10">Cancellation - Entry Permit (After Entry) – Company</option>
-          <option value="service-11">Family Residence Visa Cancellation</option>
-          <option value="service-12">Gulf Residents Visit Visa Extend</option>
-          <option value="service-13">Holding Visa</option>
-          <option value="service-14">Investor/Partner Visa</option>
-          <option value="service-15">Long Term Visit Visa Inside the Country</option>
-          <option value="service-16">New Born Residence Visa</option>
-          <option value="service-17">New Establishment Card</option>
-          <option value="service-18">New Establishment Card (with Online)</option>
-          <option value="service-19">On Arrival Visa Extension</option>
-          <option value="service-20">Parent’s Residence Visa</option>
-          <option value="service-23">Partner/Investor Visa Cancellation</option>
-          <option value="service-24">Partner/Investor Visa Renewal</option>
-          <option value="service-25">Partner/Investor Visa Stamping</option>
-          <option value="service-26">Re-Entry Permit</option>
-          <option value="service-27">Renewal of Establishment Card (with Online)</option>
-          <option value="service-29">Security Deposit</option>
-          <option value="service-30">Son/Daughter Residence Visa</option>
-          <option value="service-31">Sponsored Visit Visa - 30 Days</option>
-          <option value="service-32">Sponsored Visit Visa - 90 Days</option>
-          <option value="service-33">Spouse & Children Visa Renewal</option>
-          <option value="service-34">Spouse & Children Visa Stamping</option>
-          <option value="service-35">Spouse Residence Visa</option>
-          <option value="service-36">Travel Report - Company</option>
-          <option value="service-37">Travel Report - Family</option>
-          <option value="service-38">Virtual Visa Renewal</option>
-          <option value="service-39">Virtual Visa Stamping (01 Year)</option>
-          <option value="service-40">Virtual Work Visa [Remote Work Visa]</option>
-          <option value="service-41">Virtual Work Visa Cancellation</option>
-          <option value="service-42">Visit Visa Extension</option>
-          <option value="service-43">Golden Visa for Directors/Managers and Highlly Skilled Professionals</option>
-        </select>
-      </div>
+<body>
+  <header>
+    <h1>Amer 24/7 Services &amp; Requirements</h1>
+  </header>
 
-      <div class="edit-box">
-        <a href="https://wa.me/971501803499?text=" target="_blank">
-          <button id="editButton">Click Here to Send the Documents</button>
-        </a>
-      </div>
-      
-    </section>
+  <section class="controls">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search services..." list="suggestions" />
+      <!-- Updated datalist for suggestions -->
+      <datalist id="suggestions">
+        <option value="Change Status">
+        <option value="Medical Test and Emirates ID">
+        <option value="Change Status - Sponsored Visit Visa">
+        <option value="Data Modification - Passport Updation">
+        <option value="Data Modification - Labour Updation">
+        <option value="Employment Visa">
+        <option value="Employment Visa Cancellation">
+        <option value="Employment Visa Renewal">
+        <option value="Employment Visa Stamping">
+        <option value="Cancellation - Entry Permit (After Entry) – Company">
+        <option value="Family Residence Visa Cancellation">
+        <option value="Gulf Residents Visit Visa Extend">
+        <option value="Holding Visa">
+        <option value="Investor/Partner Visa">
+        <option value="Fine Reduction Request - New Visa">
+        <option value="New Born Residence Visa">
+        <option value="New Establishment Card">
+        <option value="New Establishment Card (with Online)">
+        <option value="On Arrival Visa Extension">
+        <option value="Parent’s Residence Visa">
+        <option value="Partner/Investor Visa Cancellation">
+        <option value="Partner/Investor Visa Renewal">
+        <option value="Partner/Investor Visa Stamping">
+        <option value="Re-Entry Permit">
+        <option value="Renewal of Establishment Card (with Online)">
+        <option value="Security Deposit">
+        <option value="Son/Daughter Residence Visa">
+        <option value="Sponsored Visit Visa - 30 Days">
+        <option value="Sponsored Visit Visa - 90 Days">
+        <option value="Spouse & Children Visa Renewal">
+        <option value="Spouse & Children Visa Stamping">
+        <option value="Spouse Residence Visa">
+        <option value="Travel Report - Company">
+        <option value="Travel Report - Family">
+        <option value="Virtual Visa Renewal">
+        <option value="Virtual Visa Stamping (01 Year)">
+        <option value="Virtual Work Visa [Remote Work Visa]">
+        <option value="Virtual Work Visa Cancellation">
+        <option value="Visit Visa Extension">
+        <option value="Golden Visa for Directors/Managers and Highlly Skilled Professionals">
+      </datalist>
+    </div>
 
-    <section id="services-container">
-  <!-- Service 1 -->
-  <div class="service-detail" id="service-1">
-    <h2>
-      <span class="icon">
-        <!-- Document icon SVG -->
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Change Status
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Emirates ID copy</li>
-      <li>Applicant’s Entry Permit Copy</li>
-    </ul>
-  </div>
+    <!-- Updated dropdown menu -->
+    <div class="dropdown-box">
+      <select id="serviceSelect">
+        <option value="">-- Select a Service --</option>
+        <option value="service-1">Change Status</option>
+        <option value="service-2">Medical Test and Emirates ID</option>
+        <option value="service-3">Change Status - Sponsored Visit Visa</option>
+        <option value="service-4">Data Modification - Passport Updation</option>
+        <option value="service-5">Data Modification - Labour Updation</option>
+        <option value="service-6">Employment Visa</option>
+        <option value="service-7">Employment Visa Cancellation</option>
+        <option value="service-8">Employment Visa Renewal</option>
+        <option value="service-9">Employment Visa Stamping</option>
+        <option value="service-10">Cancellation - Entry Permit (After Entry) – Company</option>
+        <option value="service-11">Family Residence Visa Cancellation</option>
+        <option value="service-12">Gulf Residents Visit Visa Extend</option>
+        <option value="service-13">Holding Visa</option>
+        <option value="service-14">Investor/Partner Visa</option>
+        <option value="service-15">Fine Reduction Request - New Visa</option>
+        <option value="service-16">New Born Residence Visa</option>
+        <option value="service-17">New Establishment Card</option>
+        <option value="service-18">New Establishment Card (with Online)</option>
+        <option value="service-19">On Arrival Visa Extension</option>
+        <option value="service-20">Parent’s Residence Visa</option>
+        <option value="service-23">Partner/Investor Visa Cancellation</option>
+        <option value="service-24">Partner/Investor Visa Renewal</option>
+        <option value="service-25">Partner/Investor Visa Stamping</option>
+        <option value="service-26">Re-Entry Permit</option>
+        <option value="service-27">Renewal of Establishment Card (with Online)</option>
+        <option value="service-29">Security Deposit</option>
+        <option value="service-30">Son/Daughter Residence Visa</option>
+        <option value="service-31">Sponsored Visit Visa - 30 Days</option>
+        <option value="service-32">Sponsored Visit Visa - 90 Days</option>
+        <option value="service-33">Spouse & Children Visa Renewal</option>
+        <option value="service-34">Spouse & Children Visa Stamping</option>
+        <option value="service-35">Spouse Residence Visa</option>
+        <option value="service-36">Travel Report - Company</option>
+        <option value="service-37">Travel Report - Family</option>
+        <option value="service-38">Virtual Visa Renewal</option>
+        <option value="service-39">Virtual Visa Stamping (01 Year)</option>
+        <option value="service-40">Virtual Work Visa [Remote Work Visa]</option>
+        <option value="service-41">Virtual Work Visa Cancellation</option>
+        <option value="service-42">Visit Visa Extension</option>
+        <option value="service-43">Golden Visa for Directors/Managers and Highlly Skilled Professionals</option>
+      </select>
+    </div>
 
-  <!-- Service 2 -->
-  <div class="service-detail" id="service-2">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Medical Test and Emirates ID 
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Applicant’s Passport Copy</li>
-      <li>Applicant’s one Digital Photo [From Studio]</li>
-      <li>Applicant’s Entry Permit Copy</li>
-    </ul>
-  </div>
+    <div class="edit-box">
+      <a href="https://wa.me/971501803499?text=" target="_blank">
+        <button id="editButton">Click Here to Send the Documents</button>
+      </a>
+    </div>
 
-  <!-- Service 3 -->
-  <div class="service-detail" id="service-3">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Change Status - Sponsored Visit Visa
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Emirates ID copy</li>
-      <li>Applicant’s Entry Permit Copy</li>
-    </ul>
-  </div>
+  </section>
 
-  <!-- Service 4 -->
-  <div class="service-detail" id="service-4">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Data Modification - Passport Updation
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Emirates ID Copy</li>
-      <li>Residence Visa Copy</li>
-      <li>Applicant New Passport Copy</li>
-      <li>Applicant Old Passport Copy</li>
-      <li>Applicant’s one Digital Photo [From Studio]</li>
-      <li><em>Note: Applicant must be in the UAE.</em></li>
-    </ul>
-  </div>
+  <section id="services-container">
+    <!-- Service 1 -->
+    <div class="service-detail" id="service-1">
+      <h2>
+        <span class="icon">
+          <!-- Document icon SVG -->
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Change Status
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Emirates ID copy</li>
+        <li>Applicant’s Entry Permit Copy</li>
+      </ul>
+    </div>
 
-  <!-- Service 5 -->
-  <div class="service-detail" id="service-5">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Data Modification - Labour Updation
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Emirates ID Copy</li>
-      <li>Residence Visa Copy & Passport Copy</li>
-      <li>Applicant Labour Card</li>
-      <li>Applicant’s one Digital Photo [From Studio]</li>
-      <li><em>Note: Applicant must be in the UAE.</em></li>
-    </ul>
-  </div>
+    <!-- Service 2 -->
+    <div class="service-detail" id="service-2">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Medical Test and Emirates ID
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Applicant’s Passport Copy</li>
+        <li>Applicant’s one Digital Photo [From Studio]</li>
+        <li>Applicant’s Entry Permit Copy</li>
+      </ul>
+    </div>
 
-  <!-- Service 6 -->
-  <div class="service-detail" id="service-6">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Employment Visa
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Applicant’s Passport Copy [Valid for 6+ months]</li>
-      <li>Applicant’s one Digital Photo [From Studio]</li>
-      <li>Entry Permit Approval from MOHRE</li>
-      <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
-    </ul>
-  </div>
+    <!-- Service 3 -->
+    <div class="service-detail" id="service-3">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Change Status - Sponsored Visit Visa
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Emirates ID copy</li>
+        <li>Applicant’s Entry Permit Copy</li>
+      </ul>
+    </div>
 
-  <!-- Service 7 -->
-  <div class="service-detail" id="service-7">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Employment Visa Cancellation
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s/Applicant’s Original Emirates ID</li>
-      <li>Applicant’s Residence Visa copy</li>
-      <li>Applicant’s Passport Copy</li>
-      <li><em>Note: Labour Card must be canceled first.</em></li>
-    </ul>
-  </div>
+    <!-- Service 4 -->
+    <div class="service-detail" id="service-4">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Data Modification - Passport Updation
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Emirates ID Copy</li>
+        <li>Residence Visa Copy</li>
+        <li>Applicant New Passport Copy</li>
+        <li>Applicant Old Passport Copy</li>
+        <li>Applicant’s one Digital Photo [From Studio]</li>
+        <br>
+        <li><em>Note: Applicant must be in the UAE.</em></li>
+      </ul>
+    </div>
 
-  <!-- Service 8 -->
-  <div class="service-detail" id="service-8">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Employment Visa Renewal
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Applicant’s Emirates ID copy & Residence Visa Copy</li>
-      <li>Applicant’s Passport Copy [Valid for 6+ months]</li>
-      <li>Applicant’s one Digital Photo [From Studio]</li>
-      <li>Emirates ID Application Form</li>
-      <li>Medical FIT Certificate</li>
-      <li><em>Note: Applicant must be in the UAE.</em></li>
-    </ul>
-  </div>
+    <!-- Service 5 -->
+    <div class="service-detail" id="service-5">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Data Modification - Labour Updation
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Emirates ID Copy</li>
+        <li>Residence Visa Copy & Passport Copy</li>
+        <li>Applicant Labour Card</li>
+        <li>Applicant’s one Digital Photo [From Studio]</li>
+        <br>
+        <li><em>Note: Applicant must be in the UAE.</em></li>
+      </ul>
+    </div>
 
-  <!-- Service 9 -->
-  <div class="service-detail" id="service-9">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Employment Visa Stamping
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Applicant’s Passport Copy [Valid for 6+ months]</li>
-      <li>Applicant’s one Digital Photo [From Studio]</li>
-      <li>Emirates ID Application Form</li>
-      <li>Medical FIT Certificate</li>
-      <li><em>Note: Applicant must be in the UAE.</em></li>
-    </ul>
-  </div>
+    <!-- Service 6 -->
+    <div class="service-detail" id="service-6">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Employment Visa
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Applicant’s Passport Copy [Valid for 6+ months]</li>
+        <li>Applicant’s one Digital Photo [From Studio]</li>
+        <li>Entry Permit Approval from MOHRE</li>
+        <br>
+        <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
+      </ul>
+    </div>
 
-  <!-- Service 10 -->
-  <div class="service-detail" id="service-10">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Cancellation - Entry Permit (After Entry) – Company
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Applicant’s Passport copy</li>
-      <li>Applicant’s Entry Permit Copy</li>
-      <li><em>Note: Labour Card must be canceled first.</em></li>
-    </ul>
-  </div>
+    <!-- Service 7 -->
+    <div class="service-detail" id="service-7">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Employment Visa Cancellation
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s/Applicant’s Original Emirates ID</li>
+        <li>Applicant’s Residence Visa copy</li>
+        <li>Applicant’s Passport Copy</li>
+        <br>
+        <li><em>Note: Labour Card must be canceled first.</em></li>
+      </ul>
+    </div>
 
-  <!-- Service 11 -->
-  <div class="service-detail" id="service-11">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Family Residence Visa Cancellation
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Applicant’s Residence Visa copy</li>
-      <li>Applicant’s Passport Copy</li>
-      <li><em>Note: If applicant is outside UAE for &lt;6 months, sponsor must visit immigration.</em></li>
-    </ul>
-  </div>
+    <!-- Service 8 -->
+    <div class="service-detail" id="service-8">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Employment Visa Renewal
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Applicant’s Emirates ID copy & Residence Visa Copy</li>
+        <li>Applicant’s Passport Copy [Valid for 6+ months]</li>
+        <li>Applicant’s one Digital Photo [From Studio]</li>
+        <li>Emirates ID Application Form</li>
+        <li>Medical FIT Certificate</li>
+        <br>
+        <li><em>Note: Applicant must be in the UAE.</em></li>
+      </ul>
+    </div>
 
-  <!-- Service 12 -->
-  <div class="service-detail" id="service-12">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Gulf Residents Visit Visa Extend
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Applicant’s Passport Copy [Valid for 6+ months]</li>
-      <li>Applicant’s one Digital Photo [From Studio]</li>
-      <li>Entry Permit Approval from MOHRE</li>
-      <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
-    </ul>
-  </div>
+    <!-- Service 9 -->
+    <div class="service-detail" id="service-9">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Employment Visa Stamping
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Applicant’s Passport Copy [Valid for 6+ months]</li>
+        <li>Applicant’s one Digital Photo [From Studio]</li>
+        <li>Emirates ID Application Form</li>
+        <li>Medical FIT Certificate</li>
+        <br>
+        <li><em>Note: Applicant must be in the UAE.</em></li>
+      </ul>
+    </div>
 
-  <!-- Service 13 -->
-  <div class="service-detail" id="service-13">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Holding Visa
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>New Offer Letter</li>
-      <li>Applicant Passport and Visa Copy</li>
-      <li><em>Note: Job change only within Dubai. Security Deposit: 5000 AED</em></li>
-    </ul>
-  </div>
+    <!-- Service 10 -->
+    <div class="service-detail" id="service-10">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Cancellation - Entry Permit (After Entry) – Company
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Applicant’s Passport copy</li>
+        <li>Applicant’s Entry Permit Copy</li>
+        <br>
+        <li><em>Note: Labour Card must be canceled first.</em></li>
+      </ul>
+    </div>
 
-  <!-- Service 14 -->
-  <div class="service-detail" id="service-14">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Investor/Partner Visa
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor/Owner’s Original Emirates ID</li>
-      <li>Trade License Copy</li>
-      <li>Memorandum from DED/Court (if LLC)</li>
-      <li>Passport Copy + Digital Photo</li>
-      <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
-    </ul>
-  </div>
+    <!-- Service 11 -->
+    <div class="service-detail" id="service-11">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Family Residence Visa Cancellation
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Applicant’s Residence Visa copy</li>
+        <li>Applicant’s Passport Copy</li>
+        <br>
+        <li><em>Note: If applicant is outside UAE for &lt;6 months, sponsor must visit immigration.</em></li>
+      </ul>
+    </div>
 
-  <!-- Service 15 -->
-  <div class="service-detail" id="service-15">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Long Term Visit Visa Inside the Country
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Applicant’s Passport Copy [Valid for 6+ months]</li>
-      <li>Applicant’s one Digital Photo [From Studio]</li>
-      <li>Entry Permit Approval from MOHRE</li>
-      <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
-    </ul>
-  </div>
+    <!-- Service 12 -->
+    <div class="service-detail" id="service-12">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Gulf Residents Visit Visa Extend
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Applicant’s Passport Copy [Valid for 6+ months]</li>
+        <li>Applicant’s one Digital Photo [From Studio]</li>
+        <li>Entry Permit Approval from MOHRE</li>
+        <br>
+        <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
+      </ul>
+    </div>
 
-  <!-- Service 16 -->
-  <div class="service-detail" id="service-16">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      New Born Residence Visa
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Mother’s Emirates ID/Residence Visa/Passport Copies</li>
-      <li>Applicant’s Passport Copy [Valid for 6+ months] + Photo</li>
-      <li>Arabic Birth Certificate (MOFA Attested)</li>
-      <li>Trade Licence/Labour Contract/Salary Certificate (based on sponsor’s sector)</li>
-      <li><em>Note: Security deposit (AED 3000) for investor sponsors.</em></li>
-      <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
-    </ul>
-  </div>
+    <!-- Service 13 -->
+    <div class="service-detail" id="service-13">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Holding Visa
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>New Offer Letter</li>
+        <li>Applicant Passport and Visa Copy</li>
+        <br>
+        <li><em>Note: Job change only within Dubai. Security Deposit: 5000 AED</em></li>
+      </ul>
+    </div>
 
-  <!-- Service 17 -->
-  <div class="service-detail" id="service-17">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      New Establishment Card
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Trade License & Partner List Page</li>
-      <li>Memorandum from DED/Court (if LLC)</li>
-      <li>Tenancy Contract (Ejari)</li>
-      <li>Passport Copies of All Partners</li>
-    </ul>
-  </div>
+    <!-- Service 14 -->
+    <div class="service-detail" id="service-14">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Investor/Partner Visa
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor/Owner’s Original Emirates ID</li>
+        <li>Trade License Copy</li>
+        <li>Memorandum from DED/Court (if LLC)</li>
+        <li>Passport Copy + Digital Photo</li>
+        <br>
+        <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
+      </ul>
+    </div>
 
-  <!-- Service 18 -->
-  <div class="service-detail" id="service-18">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      New Establishment Card (with Online)
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Trade License & Partner List Page</li>
-      <li>Memorandum from DED/Court (if LLC)</li>
-      <li>Tenancy Contract (Ejari)</li>
-      <li>Passport Copies of All Partners</li>
-    </ul>
-  </div>
+    <!-- Service 15 -->
+    <div class="service-detail" id="service-15">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Fine Reduction Request - New Visa
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Applicant’s Passport Copy [Valid for 6+ months]</li>
+        <li>Applicant’s one Digital Photo [From Studio]</li>
+        <li>Applicant’s OLD VISA</li>
+        <br>
+        <li>New Entry Permit (If Applicable)</li>
+        <li>New Company Trade License</li>
+        <li>New Company Labour Contract</li>
+        <li>New Sponsor Emirates ID Copy</li>
+        <br>
+        <li><em>Note: Eligible only for <b>+4000 AED</b> Fines</em></li>
+      </ul>
+    </div>
 
-  <!-- Service 19 -->
-  <div class="service-detail" id="service-19">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      On Arrival Visa Extension
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Applicant Passport Copy</li>
-    </ul>
-  </div>
+    <!-- Service 16 -->
+    <div class="service-detail" id="service-16">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        New Born Residence Visa
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Mother’s Emirates ID/Residence Visa/Passport Copies</li>
+        <li>Applicant’s Passport Copy [Valid for 6+ months] + Photo</li>
+        <li>Arabic Birth Certificate (MOFA Attested)</li>
+        <li>Trade Licence/Labour Contract/Salary Certificate (based on sponsor’s sector)</li>
+        <br>
+        <li><em>Note: Security deposit (AED 3000) for investor sponsors.</em></li>
+        <br>
+        <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
+      </ul>
+    </div>
 
-  <!-- Service 20 -->
-  <div class="service-detail" id="service-20">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Parent’s Residence Visa
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Applicant’s Passport Copy [Valid for 6+ months] + Photo</li>
-      <li>Attested Birth Certificate (MOFA Attested)</li>
-      <li>Tenancy Contract (2-bedroom minimum)</li>
-      <li>Bank Statement (Last 3 Months)</li>
-      <li><em>Note: Security Deposit AED 5000 per parent.</em></li>
-      <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
+    <!-- Service 17 -->
+    <div class="service-detail" id="service-17">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        New Establishment Card
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Trade License & Partner List Page</li>
+        <li>Memorandum from DED/Court (if LLC)</li>
+        <li>Tenancy Contract (Ejari)</li>
+        <li>Passport Copies of All Partners</li>
+      </ul>
+    </div>
 
-    </ul>
-  </div>
+    <!-- Service 18 -->
+    <div class="service-detail" id="service-18">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        New Establishment Card (with Online)
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Trade License & Partner List Page</li>
+        <li>Memorandum from DED/Court (if LLC)</li>
+        <li>Tenancy Contract (Ejari)</li>
+        <li>Passport Copies of All Partners</li>
+      </ul>
+    </div>
 
-  <!-- Service 23 -->
-  <div class="service-detail" id="service-23">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Partner/Investor Visa Cancellation
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Emirates ID of Partner/Sponsor</li>
-      <li>Applicant’s Emirates ID/Residence Visa/Passport Copies</li>
-      <li>NOC for Cancellation (Company Letterhead)</li>
-    </ul>
-  </div>
+    <!-- Service 19 -->
+    <div class="service-detail" id="service-19">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        On Arrival Visa Extension
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Applicant Passport Copy</li>
+      </ul>
+    </div>
 
-  <!-- Service 24 -->
-  <div class="service-detail" id="service-24">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Partner/Investor Visa Renewal
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Applicant’s Residence Visa Copy & Passport Copy</li>
-      <li>Memorandum of Association (DED/Court)</li>
-      <li>Trade License & Establishment Card</li>
-      <li>Company Bank Statement (3/6 Months)</li>
-      <li>Tenancy Contract (Ejari)</li>
-      <li>Emirates ID Application Form</li>
-      <li>Medical FIT Certificate</li>
-    </ul>
-  </div>
+    <!-- Service 20 -->
+    <div class="service-detail" id="service-20">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Parent’s Residence Visa
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Applicant’s Passport Copy [Valid for 6+ months] + Photo</li>
+        <li>Attested Birth Certificate (MOFA Attested)</li>
+        <li>Tenancy Contract (2-bedroom minimum)</li>
+        <li>Bank Statement (Last 3 Months)</li>
+        <li><em>Note: Security Deposit AED 5000 per parent.</em></li>
+        <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
 
-  <!-- Service 25 -->
-  <div class="service-detail" id="service-25">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Partner/Investor Visa Stamping
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Applicant’s Photo</li>
-      <li>Applicant’s Passport Copy [Valid for 6+ months]</li>
-      <li>Trade License & Establishment Card</li>
-      <li>Approved Entry Permit Copy</li>
-    </ul>
-  </div>
+      </ul>
+    </div>
 
-  <!-- Service 26 -->
-  <div class="service-detail" id="service-26">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Re-Entry Permit
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Applicant’s Emirates ID/Residence Visa/Passport Copies</li>
-    </ul>
-  </div>
+    <!-- Service 23 -->
+    <div class="service-detail" id="service-23">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Partner/Investor Visa Cancellation
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Emirates ID of Partner/Sponsor</li>
+        <li>Applicant’s Emirates ID/Residence Visa/Passport Copies</li>
+        <li>NOC for Cancellation (Company Letterhead)</li>
+      </ul>
+    </div>
 
-  <!-- Service 27 -->
-  <div class="service-detail" id="service-27">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Renewal of Establishment Card (with Online)
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Copy of Establishment Card</li>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Trade License &amp; Partner List Page</li>
-      <li>Memorandum from DED/Court (if LLC)</li>
-      <li>Emarites ID Copies of All Partners</li>
-      <li>Tenancy Contract (Ejari)</li>
-    </ul>
-  </div>
+    <!-- Service 24 -->
+    <div class="service-detail" id="service-24">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Partner/Investor Visa Renewal
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Applicant’s Residence Visa Copy & Passport Copy</li>
+        <li>Memorandum of Association (DED/Court)</li>
+        <li>Trade License & Establishment Card</li>
+        <li>Company Bank Statement (3/6 Months)</li>
+        <li>Tenancy Contract (Ejari)</li>
+        <li>Emirates ID Application Form</li>
+        <li>Medical FIT Certificate</li>
+      </ul>
+    </div>
 
-  <!-- Service 29 -->
-  <div class="service-detail" id="service-29">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Security Deposit
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Entry Permit Application</li>
-      <li>Applicant Passport</li>
-    </ul>
-  </div>
+    <!-- Service 25 -->
+    <div class="service-detail" id="service-25">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Partner/Investor Visa Stamping
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Applicant’s Photo</li>
+        <li>Applicant’s Passport Copy [Valid for 6+ months]</li>
+        <li>Trade License & Establishment Card</li>
+        <li>Approved Entry Permit Copy</li>
+      </ul>
+    </div>
 
-  <!-- Service 30 -->
-  <div class="service-detail" id="service-30">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Son/Daughter Residence Visa
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Applicant’s Passport Copy [Valid for 6+ months] + Photo</li>
-      <li>Attested Birth Certificate (MOFA Attested)</li>
-      <li>
-        <strong>Additional Requirements:</strong>
-        <ul>
-          <li>Unmarried Letter (for daughters &gt;18)</li>
-          <li>Study Letter (for sons &gt;25)</li>
-          <li>NOC from Father/Custody Documents (if applicable)</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+    <!-- Service 26 -->
+    <div class="service-detail" id="service-26">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Re-Entry Permit
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Applicant’s Emirates ID/Residence Visa/Passport Copies</li>
+      </ul>
+    </div>
 
-  <!-- Service 31 -->
-  <div class="service-detail" id="service-31">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Sponsored Visit Visa - 30 Days
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Applicant’s Passport Copy [Valid for 6+ months] + Photo</li>
-      <li>Offical Relationship proof Document</li>
-      <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
-      <li><em>Note: Security Deposit AED 1000 per applicant.</em></li>
-    </ul>
-  </div>
+    <!-- Service 27 -->
+    <div class="service-detail" id="service-27">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Renewal of Establishment Card (with Online)
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Copy of Establishment Card</li>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Trade License &amp; Partner List Page</li>
+        <li>Memorandum from DED/Court (if LLC)</li>
+        <li>Emarites ID Copies of All Partners</li>
+        <li>Tenancy Contract (Ejari)</li>
+      </ul>
+    </div>
 
-  <!-- Service 32 -->
-  <div class="service-detail" id="service-32">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Sponsored Visit Visa - 90 Days
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Same as 30-day visa.</li>
-    </ul>
-  </div>
+    <!-- Service 29 -->
+    <div class="service-detail" id="service-29">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Security Deposit
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Entry Permit Application</li>
+        <li>Applicant Passport</li>
+      </ul>
+    </div>
 
-  <!-- Service 33 -->
-  <div class="service-detail" id="service-33">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Spouse &amp; Children Visa Renewal
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Trade Licence/Labour Contract/Salary Certificate (based on sponsor’s sector)</li>
-      <li>Applicant’s Residence Visa Copy</li>
-      <li>Applicant’s Passport Copy [Valid for 6+ months] + Photo</li>
-      <li>Medical FIT Certificate (for applicants ≥18)</li>
-      <li>Emirates ID Application Form</li>
-    </ul>
-  </div>
+    <!-- Service 30 -->
+    <div class="service-detail" id="service-30">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Son/Daughter Residence Visa
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Applicant’s Passport Copy [Valid for 6+ months] + Photo</li>
+        <li>Attested Birth Certificate (MOFA Attested)</li>
+        <br>
+        <li>
+          <strong>Additional Requirements:</strong>
+          <ul>
+            <li>Unmarried Letter (for daughters &gt;18)</li>
+            <li>Study Letter (for sons &gt;25)</li>
+            <li>NOC from Father/Custody Documents (if applicable)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-  <!-- Service 34 -->
-  <div class="service-detail" id="service-34">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Spouse &amp; Children Visa Stamping
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Applicant’s Passport Copy [Valid for 6+ months] + Photo</li>
-      <li>Approved Entry Permit Copy</li>
-      <li>Medical FIT Certificate (for applicants ≥18)</li>
-      <li>Emirates ID Application Form</li>
-    </ul>
-  </div>
+    <!-- Service 31 -->
+    <div class="service-detail" id="service-31">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Sponsored Visit Visa - 30 Days
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Applicant’s Passport Copy [Valid for 6+ months] + Photo</li>
+        <li>Offical Relationship proof Document</li>
+        <br>
+        <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
+        <li><em>Note: Security Deposit AED 1000 per applicant.</em></li>
+      </ul>
+    </div>
 
-  <!-- Service 35 -->
-  <div class="service-detail" id="service-35">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Spouse Residence Visa
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Sponsor’s Original Emirates ID</li>
-      <li>Applicant’s Passport Copy [Valid for 6+ months] + Photo</li>
-      <li>Attested Marriage Certificate (MOFA Attested)</li>
-      <li><em>Note: Security Deposit AED 3000 for investor sponsors.</em></li>
-      <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
-    </ul>
-  </div>
+    <!-- Service 32 -->
+    <div class="service-detail" id="service-32">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Sponsored Visit Visa - 90 Days
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Same as 30-day visa.</li>
+      </ul>
+    </div>
 
-  <!-- Service 36 -->
-  <div class="service-detail" id="service-36">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Travel Report - Company
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Original PRO ID/Sponsor ID</li>
-      <li>Applicant Passport + Visa Copy</li>
-      <li>Establishment Card</li>
-    </ul>
-  </div>
+    <!-- Service 33 -->
+    <div class="service-detail" id="service-33">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Spouse &amp; Children Visa Renewal
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Trade Licence/Labour Contract/Salary Certificate (based on sponsor’s sector)</li>
+        <li>Applicant’s Residence Visa Copy</li>
+        <li>Applicant’s Passport Copy [Valid for 6+ months] + Photo</li>
+        <li>Medical FIT Certificate (for applicants ≥18)</li>
+        <li>Emirates ID Application Form</li>
+      </ul>
+    </div>
 
-  <!-- Service 37 -->
-  <div class="service-detail" id="service-37">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Travel Report - Family
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Applicant’s Original Emirates ID</li>
-      <li>Applicant’s Passport + Visa Copy</li>
-    </ul>
-  </div>
+    <!-- Service 34 -->
+    <div class="service-detail" id="service-34">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Spouse &amp; Children Visa Stamping
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Applicant’s Passport Copy [Valid for 6+ months] + Photo</li>
+        <li>Approved Entry Permit Copy</li>
+        <li>Medical FIT Certificate (for applicants ≥18)</li>
+        <li>Emirates ID Application Form</li>
+      </ul>
+    </div>
 
-  <!-- Service 38 -->
-  <div class="service-detail" id="service-38">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Virtual Visa Renewal
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Applicant’s Original Emirates ID</li>
-      <li>Salary Certificate + Health Insurance (1 Year)</li>
-      <li>Remote Work Appointment Letter</li>
-      <li>Emirates ID Application Form</li>
-      <li>Medical FIT Certificate</li>
-    </ul>
-  </div>
+    <!-- Service 35 -->
+    <div class="service-detail" id="service-35">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Spouse Residence Visa
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Sponsor’s Original Emirates ID</li>
+        <li>Applicant’s Passport Copy [Valid for 6+ months] + Photo</li>
+        <li>Attested Marriage Certificate (MOFA Attested)</li>
+        <br>
+        <li><em>Note: Security Deposit AED 3000 for investor sponsors.</em></li>
+        <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
+      </ul>
+    </div>
 
-  <!-- Service 39 -->
-  <div class="service-detail" id="service-39">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Virtual Visa Stamping (01 Year)
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Approved Entry Permit Copy + Passport Copy</li>
-      <li>Emirates ID Application Form</li>
-      <li>Medical FIT Certificate</li>
-    </ul>
-  </div>
+    <!-- Service 36 -->
+    <div class="service-detail" id="service-36">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Travel Report - Company
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Original PRO ID/Sponsor ID</li>
+        <li>Applicant Passport + Visa Copy</li>
+        <li>Establishment Card</li>
+      </ul>
+    </div>
 
-  <!-- Service 40 -->
-  <div class="service-detail" id="service-40">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Virtual Work Visa [Remote Work Visa]
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Salary Certificate (≥10,000 AED/month)</li>
-      <li>6-Month Bank Statement (≥3500 USD/month)</li>
-      <li>Health Insurance (1 Year)</li>
-      <li>Remote Work Appointment Letter</li>
-      <li>Passport Copy + Photo</li>
-    </ul>
-  </div>
+    <!-- Service 37 -->
+    <div class="service-detail" id="service-37">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Travel Report - Family
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Applicant’s Original Emirates ID</li>
+        <li>Applicant’s Passport + Visa Copy</li>
+      </ul>
+    </div>
 
-  <!-- Service 41 -->
-  <div class="service-detail" id="service-41">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Virtual Work Visa Cancellation
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Applicant’s Original Emirates ID</li>
-      <li>Applicant’s Passport Copy</li>
-    </ul>
-  </div>
+    <!-- Service 38 -->
+    <div class="service-detail" id="service-38">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Virtual Visa Renewal
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Applicant’s Original Emirates ID</li>
+        <li>Salary Certificate + Health Insurance (1 Year)</li>
+        <li>Remote Work Appointment Letter</li>
+        <li>Emirates ID Application Form</li>
+        <li>Medical FIT Certificate</li>
+      </ul>
+    </div>
 
-  <!-- Service 42 -->
-  <div class="service-detail" id="service-42">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Visit Visa Extention
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li>Applicant Passport + Entry Permit Copy</li>
-      <li>Sponsor Original ID</li>
-    </ul>
-  </div>
-  
-  <!-- Service 43 -->
-   <div class="service-detail" id="service-43">
-    <h2>
-      <span class="icon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
-        </svg>
-      </span>
-      Golden Visa for Directors/Managers and Highlly Skilled Professionals
-    </h2>
-    <h3>Required Documents:</h3>
-    <ul>
-      <li><em><b>IMPORTANT: </b>Applicant must have completed no less than "2 Years" of Employment</em></li>
-      <li>Applicant's Passport Copy Valid for 6+ Months</li>
-      <li>Applicant's Photo</li>
-      <li>Applicant's Visa Copy</li>
-      <li>Applicant's Labour Contract/Salary-Certificate [≥30,000 AED]</li>
-      <li>Applicant's Bank Statement for last 6 months</li>
-      <li>NOC Letter Signed from the Company</li>
-      <li>University Degree Certificate + Equivilency Certificate</li>
-      <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
-    </ul>
-  </div>
-</section>
+    <!-- Service 39 -->
+    <div class="service-detail" id="service-39">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Virtual Visa Stamping (01 Year)
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Approved Entry Permit Copy + Passport Copy</li>
+        <li>Emirates ID Application Form</li>
+        <li>Medical FIT Certificate</li>
+      </ul>
+    </div>
 
-    <footer>
-      <p>Operating Hours: 24/7, including Fridays and public holidays.</p>
-      <p>
-        Contact:
-        WhatsApp: +971 58 1257700 |
-        Email: <a href="mailto:info@amer247.com">info@amer247.com</a> |
-        Phone: +971 4 2300500
-      </p>
-      <p>Created and developed my Momen Elhag</p>
-    </footer>
+    <!-- Service 40 -->
+    <div class="service-detail" id="service-40">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Virtual Work Visa [Remote Work Visa]
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Salary Certificate (≥10,000 AED/month)</li>
+        <li>6-Month Bank Statement (≥3500 USD/month)</li>
+        <li>Health Insurance (1 Year)</li>
+        <li>Remote Work Appointment Letter</li>
+        <li>Passport Copy + Photo</li>
+      </ul>
+    </div>
 
-    <script>
-      // Hide all service details on start
-      const services = document.querySelectorAll('.service-detail');
+    <!-- Service 41 -->
+    <div class="service-detail" id="service-41">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Virtual Work Visa Cancellation
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Applicant’s Original Emirates ID</li>
+        <li>Applicant’s Passport Copy</li>
+      </ul>
+    </div>
+
+    <!-- Service 42 -->
+    <div class="service-detail" id="service-42">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Visit Visa Extention
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Applicant Passport + Entry Permit Copy</li>
+        <li>Sponsor Original ID</li>
+      </ul>
+    </div>
+
+    <!-- Service 43 -->
+    <div class="service-detail" id="service-43">
+      <h2>
+        <span class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+        </span>
+        Golden Visa for Directors/Managers and Highlly Skilled Professionals
+      </h2>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li><em><b>IMPORTANT: </b>Applicant must have completed no less than "2 Years" of Employment</em></li>
+        <li>Applicant's Passport Copy Valid for 6+ Months</li>
+        <li>Applicant's Photo</li>
+        <li>Applicant's Visa Copy</li>
+        <li>Applicant's Labour Contract/Salary-Certificate [≥30,000 AED]</li>
+        <li>Applicant's Bank Statement for last 6 months</li>
+        <li>NOC Letter Signed from the Company</li>
+        <li>University Degree Certificate + Equivilency Certificate</li>
+        <br>
+        <li><em>Note: National ID required for Pakistan, Afghanistan, Iran, & Iraq nationals.</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>For Any Inquiries Ask the Reception</p>
+
+    <p>Developed by <b>Momen Elhag</b></p>
+  </footer>
+
+  <script>
+    // Hide all service details on start
+    const services = document.querySelectorAll('.service-detail');
+    services.forEach(service => {
+      service.style.display = 'none';
+    });
+
+    // Dropdown selection shows the selected service with fade animation
+    const serviceSelect = document.getElementById('serviceSelect');
+    serviceSelect.addEventListener('change', function () {
       services.forEach(service => {
         service.style.display = 'none';
+        service.classList.remove('fade-in');
       });
-
-      // Dropdown selection shows the selected service with fade animation
-      const serviceSelect = document.getElementById('serviceSelect');
-      serviceSelect.addEventListener('change', function () {
-        services.forEach(service => {
-          service.style.display = 'none';
-          service.classList.remove('fade-in');
-        });
-        const selected = serviceSelect.value;
-        if (selected) {
-          const el = document.getElementById(selected);
-          el.style.display = 'block';
-          void el.offsetWidth;
-          el.classList.add('fade-in');
-        }
-      });
-
-      // Simple live search: filter services as user types in search box
-      const searchInput = document.getElementById('searchInput');
-      searchInput.addEventListener('input', function () {
-        const filter = searchInput.value.toLowerCase();
-        services.forEach(service => {
-          const title = service.querySelector('h2').textContent.toLowerCase();
-          if (title.includes(filter)) {
-            service.style.display = 'block';
-            service.classList.add('fade-in');
-          } else {
-            service.style.display = 'none';
-          }
-        });
-      });
-
-      // Edit mode toggle (password protected)
-      const editPassword = "howdareyou"; // Change as desired
-      function toggleEdit() {
-        const pass = prompt("Enter password to edit the list:");
-        if (pass === editPassword) {
-          const container = document.getElementById("services-container");
-          if (container.contentEditable === "true") {
-            container.contentEditable = "false";
-            alert("Edit mode disabled.");
-          } else {
-            container.contentEditable = "true";
-            alert("Edit mode enabled. You can now edit the list.");
-          }
-        } else {
-          alert("Incorrect password.");
-        }
+      const selected = serviceSelect.value;
+      if (selected) {
+        const el = document.getElementById(selected);
+        el.style.display = 'block';
+        void el.offsetWidth;
+        el.classList.add('fade-in');
       }
-      window.toggleEdit = toggleEdit;
-    </script>
-  </body>
+    });
+
+    // Simple live search: filter services as user types in search box
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', function () {
+      const filter = searchInput.value.toLowerCase();
+      services.forEach(service => {
+        const title = service.querySelector('h2').textContent.toLowerCase();
+        if (title.includes(filter)) {
+          service.style.display = 'block';
+          service.classList.add('fade-in');
+        } else {
+          service.style.display = 'none';
+        }
+      });
+    });
+
+    // Edit mode toggle (password protected)
+    const editPassword = "howdareyou"; // Change as desired
+    function toggleEdit() {
+      const pass = prompt("Enter password to edit the list:");
+      if (pass === editPassword) {
+        const container = document.getElementById("services-container");
+        if (container.contentEditable === "true") {
+          container.contentEditable = "false";
+          alert("Edit mode disabled.");
+        } else {
+          container.contentEditable = "true";
+          alert("Edit mode enabled. You can now edit the list.");
+        }
+      } else {
+        alert("Incorrect password.");
+      }
+    }
+    window.toggleEdit = toggleEdit;
+  </script>
+</body>
+
 </html>
